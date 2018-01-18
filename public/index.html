@@ -21,8 +21,9 @@
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
       #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
       #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #message a { display: block; text-decoration: none; }
+      #message { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      .action a { display: block; text-align: center; background: #039be5; text-decoration: none; color: white; padding: 10px; border-radius: 4px; }
       #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
       @media (max-width: 600px) {
         body, #message { margin-top: 0; background: white; box-shadow: none; }
@@ -32,10 +33,21 @@
   </head>
   <body>
     <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+      <h2>PyCon Taiwan</h2>
+      <h1>Event Listing</h1>
+      <p>See all the event archives!</p>
+<ul>
+  <li><a href="http://tw.pycon.org/" target="_blank">PyCon Taiwan 2018</a></li>
+  <li><a href="http://tw.pycon.org/2017" target="_blank">PyCon Taiwan 2017</a></li>
+  <li><a href="http://tw.pycon.org/2016" target="_blank">PyCon Taiwan 2016</a></li>
+  <li><a href="http://tw.pycon.org/2015apac" target="_blank">PyCon APAC 2015</a></li>
+  <li><a href="http://tw.pycon.org/2014apac" target="_blank">PyCon APAC 2014</a></li>
+  <li><a href="http://tw.pycon.org/2013" target="_blank">PyCon Taiwan 2013</a></li>
+  <li><a href="http://tw.pycon.org/2012" target="_blank">PyCon Taiwan 2012</a></li>
+</ul>
+     <div class="action">
+      <a href="http://www.facebook.com/pycontw/posts/1542295675889269" target="_blank">Call for Volunteers</a>
+     </div>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
 
